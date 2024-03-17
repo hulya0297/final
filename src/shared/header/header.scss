@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icons_container {
+        display: flex;
+        margin-left: 50px;
+        padding-top: 8px;
+
+        &_list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+    .navbar {
+        &_menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: "Sawarabi Gothic", sans-serif;
+            margin-right: 50px;
+
+            &_item {
+                cursor: pointer;
+                &:hover {
+                    color: #5ba515ff;
+                }
+            }
+        }
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.active {
+    color: #5ba515ff;
+}
