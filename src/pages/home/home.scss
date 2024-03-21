@@ -1,5 +1,8 @@
 .main_container {
     margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .choose {
         display: flex;
@@ -9,8 +12,6 @@
             display: flex;
             flex-direction: column;
             gap: 70px;
-
-
 
             &_title {
                 font-family: "Aleo", serif;
@@ -185,4 +186,122 @@
     }
 
     // cards
+}
+
+
+// about
+.about {
+    display: flex;
+    justify-content: center;
+
+
+    &_list {
+        display: flex;
+        gap: 30px;
+
+
+
+
+        &_item {
+            margin-top: 70px;
+            border: 1px solid #bcbaba;
+            ;
+            width: 270px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+
+
+            &_icons {
+                width: 50px;
+                height: 40px;
+                color: #5ba515ff;
+                margin-left: 10px;
+            }
+
+
+
+            &_content {
+
+
+
+                &_title {
+                    color: #2d2d2d;
+
+                }
+
+                &_text {
+                    color: #707070;
+                    font-size: 14px;
+                    text-align: center;
+
+                }
+            }
+        }
+    }
+
+}
+
+// about
+
+// subscribe
+
+.subscribe {
+
+    width: 800px;
+    height: 360px;
+    background-color: #EEEEEEFF;
+    text-align: center;
+    margin-top: 70px;
+
+    &_title {
+        font-family: "Aleo", serif;
+        font-size: 40px;
+        font-weight: 600;
+        color: #2d2d2d;
+        margin: 50px 0px 25px 0px;
+    }
+
+    &_text {
+        color: #707070;
+        margin-top: 30px;
+    }
+
+    .subscribe_form {
+        display: flex;
+        justify-content: center;
+        justify-content: baseline;
+
+
+
+        &_input {
+            border: none;
+            border-radius: 50px 0px 0px 50px;
+            width: 300px;
+            height: 50px;
+            margin-top: 30px;
+
+        }
+
+        &_button {
+            border-radius: 50px;
+            width: 160px;
+            height: 50px;
+            border: none;
+            background-color: #5ba515ff;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+
+            &_icon {
+                font-size: 15px;
+
+            }
+        }
+    }
 }

@@ -1,9 +1,12 @@
 import "./home.scss";
 import choose_img from "../../assets/image/img1.jpg";
-import product_logo from "../../assets/image/img2.png";
+import home_logo from "../../assets/image/img2.png";
 import cardimg1 from "../../assets/image/cardimg1.jpg";
-import { PiPottedPlantBold } from "react-icons/pi";
+import { PiPottedPlantBold, PiVan, PiGiftBold } from "react-icons/pi";
 import { GiCactusPot, GiFlowerPot } from "react-icons/gi";
+import { HiMiniArrowPath } from "react-icons/hi2";
+import { LuPhone } from "react-icons/lu";
+import { FaArrowRight } from "react-icons/fa6";
 import {
   MdFavoriteBorder,
   MdOutlineShoppingCart,
@@ -19,17 +22,17 @@ function Home() {
         </aside>
 
         <article className="choose_content">
-          <h2 className="choose_content_title">Why choose us?
-          <p className="underline"></p>
+          <h2 className="choose_content_title">
+            Why choose us?
+            <p className="choose_content_underline"></p>
           </h2>
-         
+
           <p className="choose_content_text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
             fugit aliquid accusamus eaque nihil quae, recusandae, esse quam
             expedita dolore placeat vero ipsam quas minus. Aliquid eligendi
-            dignissimos aliquam eos placeat vero ipsam quas minus? 
-            <span className="choose_content_text_more" >...Learn more</span>
-           
+            dignissimos aliquam eos placeat vero ipsam quas minus?
+            <span className="choose_content_text_more">...Learn more</span>
           </p>
           <ul className="choose_content_list">
             <li className="choose_content_list_item">
@@ -76,7 +79,7 @@ function Home() {
       {/* Featured Product card */}
       <section className="featuredProduct">
         <h2 className="featuredProduct_title">Featured Product</h2>
-        <img src={product_logo} alt="product_logo" />
+        <img src={home_logo} alt="product_logo" />
         <p className="featuredProduct_text">
           Lorem ipsum is simply dummy text of the printing and typesetting
           industry.
@@ -107,13 +110,78 @@ function Home() {
               </ul>
             </div>
             <p className="featuredProduct_cards_content_text">Sit voluptatem</p>
-            <p className="featuredProduct_cards_content_price" > 68.00 $</p>
+            <p className="featuredProduct_cards_content_price"> 68.00 $</p>
           </div>
         </div>
       </section>
       {/* Featured Product card */}
 
+      {/* section about */}
+      <section className="about">
+        <ul className="about_list">
+          <li className="about_list_item">
+            <PiVan className="about_list_item_icons" />{" "}
+            <div className="about_list_item_content">
+              <h3 className="about_list_item_content_title">
+                Free shipping order
+              </h3>
+              <p className="about_list_item_content_text">
+                On orders over $100
+              </p>
+            </div>
+          </li>
+          <li className="about_list_item">
+            <PiGiftBold className="about_list_item_icons" />{" "}
+            <div className="about_list_item_content">
+              <h3 className="about_list_item_content_title">
+                Special gift card
+              </h3>
+              <p className="about_list_item_content_text">
+                The perfect gift idea
+              </p>
+            </div>
+          </li>
+          <li className="about_list_item">
+            <HiMiniArrowPath className="about_list_item_icons" />{" "}
+            <div className="about_list_item_content">
+              <h3 className="about_list_item_content_title">
+                Return & exchange
+              </h3>
+              <p className="about_list_item_content_text">
+                Free return within 3 days
+              </p>
+            </div>
+          </li>
+          <li className="about_list_item">
+            <LuPhone className="about_list_item_icons" />{" "}
+            <div className="about_list_item_content">
+              <h3 className="about_list_item_content_title">Support 24 / 7</h3>
+              <p className="about_list_item_content_text">Customer support</p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
+      {/* section about */}
+      <section className="subscribe">
+        <h2 className="subscribe_title">Subscribe Our Newsletter</h2>
+        <img src={home_logo} alt="home_logo" />
+        <p className="subscribe_text">
+          Enter Your email address to join our mailing list and keep yourself
+          update
+        </p>
+        <form className="subscribe_form">
+          <input
+            className="subscribe_form_input"
+            type="email"
+            placeholder="Enter Your Email"
+          />
+          <button className="subscribe_form_button">
+            Shop Now
+            <FaArrowRight  className="subscribe_form_button_icon"/>{" "}
+          </button>
+        </form>
+      </section>
     </main>
   );
 }
