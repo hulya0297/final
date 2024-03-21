@@ -1,51 +1,91 @@
 import "./header.scss";
-import {  Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/image/logo.png";
 import { CiSearch, CiHeart } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
   return (
     <header className="header">
+      {/* <div className="header_navigation">
+        <ul className="header_navigation_menu">
+          <li className="header_navigation_menu_item">
+          <RxHamburgerMenu className="header_navigation_menu_item_icon" />
+          
+          </li>
+          <li className="header_navigation_menu_item">
+
+          </li>
+          <li className="header_navigation_menu_item">
+
+          </li>
+        </ul>
+      </div> */}
       <nav className="navbar">
         <ul className="navbar_menu">
           <li className="navbar_menu_item">
-            <Link
-              to="/home"
+            <NavLink
+              to="/"
               className={({ isActive }) =>
                 isActive ? "navbar_menu_link active" : "navbar_menu_link"
               }
             >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className="navbar_menu_item">
-            <Link to="/store" className="navbar_menu_link">
+            <NavLink
+              to="/store"
+              className={({ isActive }) =>
+                isActive ? "navbar_menu_link active" : "navbar_menu_link"
+              }
+            >
               Store
-            </Link>
+            </NavLink>
           </li>
           <li className="navbar_menu_item">
-            <Link to="/about " className="navbar_menu_link">
+            <NavLink
+              to="/about "
+              className={({ isActive }) =>
+                isActive ? "navbar_menu_link active" : "navbar_menu_link"
+              }
+            >
               About
-            </Link>
+            </NavLink>
           </li>
           <li className="navbar_menu_item">
             <img src={logo} alt="Logo" />
           </li>
           <li className="navbar_menu_item">
-            <Link to="/blog" className="navbar_menu_link">
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                isActive ? "navbar_menu_link active" : "navbar_menu_link"
+              }
+            >
               Blog
-            </Link>
+            </NavLink>
           </li>
           <li className="navbar_menu_item">
-            <Link to="/page" className="navbar_menu_link">
+            <NavLink
+              to="/page"
+              className={({ isActive }) =>
+                isActive ? "navbar_menu_link active" : "navbar_menu_link"
+              }
+            >
               Pages
-            </Link>
+            </NavLink>
           </li>
           <li className="navbar_menu_item">
-            <Link to="/contact" className="navbar_menu_link">
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "navbar_menu_link active" : "navbar_menu_link"
+              }
+            >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

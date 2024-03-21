@@ -15,7 +15,10 @@
             gap: 20px;
         }
     }
+
     .navbar {
+
+
         &_menu {
             display: flex;
             justify-content: center;
@@ -23,11 +26,12 @@
             gap: 50px;
             font-size: 1rem;
             font-weight: 700;
-            font-family: "Sawarabi Gothic", sans-serif;
+
             margin-right: 50px;
 
             &_item {
                 cursor: pointer;
+
                 &:hover {
                     color: #5ba515ff;
                 }
@@ -43,6 +47,6 @@
     }
 }
 
-.active {
+.active{
     color: #5ba515ff;
 }

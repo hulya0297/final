@@ -1,0 +1,188 @@
+.main_container {
+    margin: 50px;
+
+    .choose {
+        display: flex;
+
+        &_content {
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+
+
+
+            &_title {
+                font-family: "Aleo", serif;
+                font-size: 40px;
+                font-weight: 600;
+
+                .underline {
+                    margin-top: 10px;
+                    border-bottom: 3px solid #5ba515ff;
+                    width: 100px;
+                }
+
+            }
+
+            &_text {
+                color: #707070;
+
+                &_more {
+                    color: #5ba515ff;
+                    cursor: pointer;
+
+                }
+            }
+
+            &_list {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                &_item {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+
+                    &_icon {
+                        font-size: 70px;
+                        color: #5ba515ff;
+
+                    }
+
+
+
+                    &_text {
+                        &_title {
+                            color: #2d2d2d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // cards
+    .featuredProduct {
+        text-align: center;
+
+        &_title {
+            font-family: "Aleo", serif;
+            font-size: 40px;
+            font-weight: 600;
+            color: #2d2d2d;
+            margin: 50px 0px 25px 0px;
+        }
+
+        &_text {
+            color: #707070;
+            margin-top: 30px;
+        }
+
+        &_cards {
+            width: 252px;
+            height: 380px;
+            border: 1px solid #d1d1d1;
+
+            &_imgs {
+                width: 250px;
+                height: 250px;
+
+                &_img {
+                    width: 250px;
+                    height: 250px;
+                }
+
+
+            }
+
+
+            &_content {
+                &_price {
+                    font-size: 20px;
+                    font-weight: bold;
+
+
+                }
+
+                &_text {
+                    color: #707070;
+                    margin-bottom: 20px;
+
+                    &:hover {
+                        color: #5ba515ff;
+                        font-family: "Aleo", serif;
+
+                    }
+
+
+                }
+
+                &_overlay {
+                    visibility: hidden;
+
+
+                    &_overlayMenu {
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+
+                        &_icon {
+                            font-size: 16px;
+
+                        }
+
+
+
+
+                        &_item1 {
+
+                            border: 1px solid white;
+                            width: 30px;
+                            height: 25px;
+                            border-radius: 10px 0px 0px 10px;
+                            background-color: white;
+
+                            &:hover {
+                                background-color: #5ba515ff;
+                                color: white;
+                            }
+                        }
+
+                        &_item2 {
+                            border: 1px solid white;
+                            width: 30px;
+                            height: 25px;
+                            background-color: white;
+
+                            &:hover {
+                                background-color: #5ba515ff;
+                                color: white;
+                            }
+                        }
+
+                        &_item3 {
+
+                            border: 1px solid white;
+                            width: 30px;
+                            height: 25px;
+                            border-radius: 0px 10px 10px 0px;
+                            background-color: white;
+
+                            &:hover {
+                                background-color: #5ba515ff;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    // cards
+}
