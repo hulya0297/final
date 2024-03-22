@@ -1,0 +1,312 @@
+// about
+.about {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+
+
+
+    &_banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 260px;
+        width: 100%;
+
+        background-color: #F3F3F3FF;
+        text-align: center;
+
+
+
+        &_leftside {
+            width: 500px;
+            height: 260px;
+
+
+            &_img {
+                width: 500px;
+                height: 250px;
+            }
+        }
+
+        &_content {
+            &_title {
+                font-family: "Aleo", serif;
+                font-size: 40px;
+                font-weight: 600;
+                color: #2d2d2d;
+            }
+
+            &_text {
+                color: #707070;
+
+                &_link:hover {
+                    color: #5ba515ff;
+                }
+            }
+        }
+
+        &_rightside {
+            width: 500px;
+            height: 260px;
+
+            &_img {
+                width: 500px;
+                height: 250px;
+            }
+        }
+    }
+
+    // about
+
+    // aboutTeam
+
+    .aboutTeam {
+
+        margin: 0px 50px;
+
+        display: flex;
+        justify-content: space-between;
+
+
+
+
+
+        &_content {
+
+
+            width: 480px;
+            height: 499px;
+
+
+            &_title {
+                margin-top: 100px;
+                font-size: 30px;
+                font-weight: 600;
+                color: #2d2d2d;
+                font-family: "Aleo", serif;
+                text-align: left;
+
+
+            }
+
+
+            &_underline {
+
+                border: 1px solid rgb(116, 174, 116);
+                width: 60px;
+                margin: 20px 0px;
+
+            }
+
+            &_text {
+                font-size: 14px;
+                color: #707070;
+                text-align: left;
+
+            }
+        }
+
+
+    }
+
+    // aboutTeam
+
+    // ourTeam
+    .ourTeam {
+        margin: 0px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_title {
+            font-size: 40px;
+            color: #2d2d2d;
+            font-weight: 700;
+            font-family: "Aleo", serif;
+
+        }
+
+        &_people {
+            display: flex;
+            margin-top: 50px;
+            gap: 40px;
+
+            &_card {
+                position: relative;
+                width: 372px;
+                height: 400px;
+
+
+                &:hover .ourTeam_people_card_over {
+                    visibility: visible;
+
+
+
+
+                }
+
+                &_over {
+                    position: absolute;
+                    bottom: 27%;
+                    width: 372px;
+                    height: 290px;
+                    background-color: #2d2d2d;
+                    opacity: 0.7;
+                    visibility: hidden;
+
+
+
+
+                    &_social {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        display: flex;
+
+
+
+                        &_list {
+                            display: flex;
+                            gap: 40px;
+
+                            &_icon {
+                                font-size: 16px;
+                                cursor: pointer;
+                                color: white;
+
+
+
+                                &:hover {
+
+                                    color: #5ba515ff;
+
+
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+                }
+
+                &_title {
+                    text-align: center;
+                    margin-top: 10px;
+                    color: #2d2d2d;
+
+                    &:hover {
+                        color: #5ba515ff;
+                        cursor: pointer;
+                    }
+                }
+
+                &_profession {
+                    font-size: 14px;
+                    color: #707070;
+                    text-align: center;
+                    margin-top: 5px;
+                }
+            }
+
+        }
+    }
+
+
+    // ourTeam
+    .subscribe {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    
+    
+    
+        &_container {
+            width: 1000px;
+            height: 400px;
+            background-color: #F4F4F4FF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+    
+            &_title {
+                font-family: "Aleo", serif;
+                font-size: 40px;
+                font-weight: 600;
+                color: #2d2d2d;
+                margin: 50px 0px 25px 0px;
+            }
+    
+            &_text {
+                color: #707070;
+                margin-top: 30px;
+            }
+    
+            &_form {
+                display: flex;
+                justify-content: center;
+                justify-content: baseline;
+    
+    
+    
+                &_input {
+                    border: none;
+                    border-radius: 50px 0px 0px 50px;
+                    width: 350px;
+                    height: 50px;
+                    margin-top: 30px;
+                    padding-left: 20px;
+                    outline: none;
+    
+    
+    
+    
+                }
+    
+                &_button {
+                    border-radius: 50px;
+                    width: 200px;
+                    height: 50px;
+                    border: none;
+                    background-color: #5ba515ff;
+                    color: white;
+                    text-align: center;
+                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    margin-top: 30px;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background-color: rgb(183, 213, 154);
+                    }
+    
+                    &_icon {
+                        font-size: 16px;
+                        margin-top: 5px;
+    
+    
+                    }
+                }
+            }
+    
+        }
+    
+    
+    
+    }
+    
+    // subscribe
+}
+
+.active {
+    color: #5ba515ff;
+}
