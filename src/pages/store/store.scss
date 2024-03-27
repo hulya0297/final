@@ -1,0 +1,63 @@
+.store {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+
+
+
+    &_banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 260px;
+        width: 100%;
+
+        background-color: #F3F3F3FF;
+        text-align: center;
+
+
+
+        &_leftside {
+            width: 500px;
+            height: 260px;
+
+
+            &_img {
+                width: 500px;
+                height: 250px;
+            }
+        }
+
+        &_content {
+            &_title {
+                font-family: "Aleo", serif;
+                font-size: 40px;
+                font-weight: 600;
+                color: #2d2d2d;
+            }
+
+            &_text {
+                color: #707070;
+
+                &_link:hover {
+                    color: #5ba515ff;
+                }
+            }
+        }
+
+        &_rightside {
+            width: 500px;
+            height: 260px;
+
+            &_img {
+                width: 500px;
+                height: 250px;
+            }
+        }
+    }
+
+    // store Banner
+
+
+}

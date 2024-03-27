@@ -11,6 +11,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
 const About = () => {
   return (
+    
     <main className="about">
       {/* about */}
       <section className="about_banner">
