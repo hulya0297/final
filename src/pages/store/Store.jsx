@@ -1,9 +1,9 @@
-
 import leftimg from "../../assets/image/aboutImg/img1.png";
 import rightimg from "../../assets/image/aboutImg/img2.png";
 import { Link } from "react-router-dom";
 import "./store.scss";
 import Subscribe from "../../shared/subscribe/Subscribe";
+import Card from "../../components/Card/Card";
 function store() {
   return (
     <main className="store">
@@ -37,8 +37,8 @@ function store() {
           />
         </aside>
       </section>
-      <Subscribe/>
-   
+      <Card />
+      <Subscribe />
     </main>
   );
 }

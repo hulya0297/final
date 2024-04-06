@@ -1,11 +1,8 @@
 .featuredProduct {
     text-align: center;
 
-
-
-
     &_cards {
-     
+
         width: 252px;
         height: 380px;
         border: 1px solid #d1d1d1;
@@ -41,23 +38,16 @@
 
 
         &_content {
-            &_price {
-                font-size: 20px;
-                font-weight: bold;
-                cursor: pointer;
 
-
-            }
 
             &_text {
                 color: #707070;
                 margin-bottom: 20px;
                 cursor: pointer;
+                transition: all .2s ease-in-out;
 
                 &:hover {
                     color: #5ba515ff;
-                    font-family: "Aleo", serif;
-
                 }
 
 
@@ -119,6 +109,17 @@
                         }
                     }
                 }
+            }
+        }
+
+        .price {
+            display: flex;
+            justify-content: center;
+            gap: 0px 10px;
+
+            &-old {
+                opacity: .4;
+                text-decoration: line-through;
             }
         }
 

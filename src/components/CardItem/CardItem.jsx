@@ -37,7 +37,10 @@ function CardItem({ product }) {
           <p className="featuredProduct_cards_content_text">
             {product.description}
           </p>
-          <p className="featuredProduct_cards_content_price">{product.price}</p>
+          <p className="price">
+            <span className="price-old">{product.oldprice}</span>
+            <span className="price-new">{product.price}</span>
+          </p>
         </div>
       </div>
     </section>
