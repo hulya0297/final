@@ -9,8 +9,8 @@ import { LuPhone } from "react-icons/lu";
 import Subscribe from "../../shared/subscribe/Subscribe";
 import Card from "../../components/Card/Card";
 import { Link } from "react-router-dom";
-import shopNow1 from "../../assets/image/homeimg/shop1.jpg"
-import shopNow2 from "../../assets/image/homeimg/shop2.jpg"
+import shopNow1 from "../../assets/image/homeimg/shop1.jpg";
+import shopNow2 from "../../assets/image/homeimg/shop2.jpg";
 import Countdown from "../../components/CountDown/Countdown";
 
 function Home() {
@@ -78,15 +78,15 @@ function Home() {
 
       {/* Featured Product card */}
       <section className="featuredProductSec">
-      <h2 className="featuredProductSec_title">Featured Product</h2>
-      <img src={home_logo} alt="product_logo" />
-      <p className="featuredProductSec_text">
-        Lorem ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-      <Card  />
+        <h2 className="featuredProductSec_title">Featured Product</h2>
+        <img src={home_logo} alt="product_logo" />
+        <p className="featuredProductSec_text">
+          Lorem ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <Card />
       </section>
-   
+
       {/* Featured Product card */}
 
       {/* section about */}
@@ -137,35 +137,31 @@ function Home() {
 
       {/* section about */}
 
-
       {/* shopNow */}
       <section className="shopNow">
         <aside className="shopNow_side">
-          <Link  to='/'>
+          <Link to="/store">
             <img src={shopNow1} alt="shop" />
           </Link>
-
         </aside>
         <aside className="shopNow_side">
-          <Link to="/">
+          <Link to="/store">
             <img src={shopNow2} alt="shop" />
           </Link>
         </aside>
       </section>
-        {/* shopNow */}
+      {/* shopNow */}
 
-        {/* daily deal */}
-        <section className="dailyDeal">
+      {/* daily deal */}
+      <section className="dailyDeal">
         <h2 className="dailyDeal_title">Daily Deal</h2>
-      <img src={home_logo} alt="logo" />
-      <p className="dailyDeal_text">
-      There are many variations of passages of lorem ipsum available.
-      </p>
-       <Countdown/>
-
-        </section>
-        {/* daily deal */}
-        
+        <img src={home_logo} alt="logo" />
+        <p className="dailyDeal_text">
+          There are many variations of passages of lorem ipsum available.
+        </p>
+        <Countdown />
+      </section>
+      {/* daily deal */}
       <Subscribe />
     </main>
   );
