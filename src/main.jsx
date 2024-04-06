@@ -8,6 +8,7 @@ import About from "./pages/about/About.jsx";
 import Store from "./pages/store/Store.jsx";
 import Contact from "./pages/contact/Contact.jsx";
 import Blog from "./pages/blog/Blog.jsx";
+import Page from "./pages/page/Page.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/store" element={<Store/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="blog" element={<Blog />} />
+          <Route path="page" element={<Page />} />
       
         </Route>
       </Routes>

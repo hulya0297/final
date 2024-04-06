@@ -8,10 +8,12 @@ import man1 from "../../assets/image/aboutImg/man1.jpg";
 import woman from "../../assets/image/aboutImg/woman.jpg";
 import man2 from "../../assets/image/aboutImg/man2.jpg";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa6";
+import Subscribe from "../../shared/subscribe/Subscribe";
+import AccordionItem from "../../components/AccordionItem/AccordionItem";
+import introSecimg from "../../assets/image/aboutImg/img4.png";
+
 const About = () => {
   return (
-    
     <main className="about">
       {/* about */}
       <section className="about_banner">
@@ -68,6 +70,103 @@ const About = () => {
       </section>
 
       {/* aboutTeam */}
+      {/* Counter Section */}
+      <section className="counterSec">
+        <ul className="counterSec_list">
+          <li className="counterSec_list_item">
+            <h2 className="counterSec_list_item_count">229</h2>
+            <p className="counterSec_list_item_content">HAPPY CLIENTS</p>
+          </li>
+          <div className="border"></div>
+          <li className="counterSec_list_item">
+            <h2 className="counterSec_list_item_count">109</h2>
+            <p className="counterSec_list_item_content">COMPLETED PROJECT</p>
+          </li>
+          <div className="border"></div>
+          <li className="counterSec_list_item">
+            <h2 className="counterSec_list_item_count">22</h2>
+            <p className="counterSec_list_item_content">AWESOME STAFF</p>
+          </li>
+          <div className="border"></div>
+          <li className="counterSec_list_item">
+            <h2 className="counterSec_list_item_count">11</h2>
+            <p className="counterSec_list_item_content">WINNING AWARDS</p>
+          </li>
+        </ul>
+      </section>
+      {/* Counter Section */}
+
+      {/* introSec */}
+
+      <section className="introSec">
+        <aside className="introSec_img">
+          <img src={introSecimg} alt="" />
+        </aside>
+        <article className="introSec_accordion">
+          <AccordionItem />
+        </article>
+      </section>
+      {/* introSec */}
+
+      {/* delevery prosses */}
+      <section className="deleveryPross">
+        <h2 className="deleveryPross_title">Delivery Process</h2>
+        <img src={aboutlogo} alt="" />
+
+        <div className="grid_container">
+          <div className="grid_container_topright">
+            <div className="grid_container_clipPathright"></div>
+            <div className="grid_container_step">
+              <p>STEP 01</p>
+            </div>
+            <h4 className="grid_container_title">CHOOSE YOUR PRODUCTS</h4>
+            <p className="grid_container_text">
+              There are many variations of passages of lorem ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour. Both betanin
+            </p>
+          </div>
+          <div className="grid_container_topleft">
+          <div className="grid_container_clipPathleft"></div>
+            <div className="grid_container_step">
+              <p>STEP 02</p>
+            </div>
+            <h4 className="grid_container_title">CONNECT NEAREST STORED</h4>
+            <p className="grid_container_text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry s standard dummy text
+              ever since the 1500s.
+            </p>
+          </div>
+          <div className="grid_container_bottomright">
+          <div className="grid_container_clipPathright"></div>
+            <div className="grid_container_step">
+              <p>STEP 03</p>
+            </div>
+            <h4 className="grid_container_title">SHARE YOUR LOCATION</h4>
+            <p className="grid_container_text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore
+            </p>
+          </div>
+          <div className="grid_container_bottomleft">
+          <div className="grid_container_clipPathleft"></div>
+            <div className="grid_container_step">
+              <p>STEP 04</p>
+            </div>
+            <h4 className="grid_container_title">GET DELIVERED FAST</h4>
+            <p className="grid_container_text">
+              On the other hand, we denounce with righteous indignation and
+              dislike men who are so beguiled and demoralized by the charms of
+              pleasure of the moment.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* delevery prosses */}
+
+      {/* ourteam */}
 
       <section className="ourTeam">
         <h2 className="ourTeam_title">Meet Our Team</h2>
@@ -146,31 +245,7 @@ const About = () => {
         </div>
       </section>
       {/* ourTeam */}
-      {/* subscribe */}
-
-      <section className="subscribe">
-        <div className="subscribe_container">
-        <h2 className="subscribe_container_title">Subscribe Our Newsletter</h2>
-        <img src={aboutlogo} alt="home_logo" />
-        <p className="subscribe_container_text">
-          Enter Your email address to join our mailing list and keep yourself
-          update
-        </p>
-        <form className="subscribe_container_form">
-          <input
-            className="subscribe_container_form_input"
-            type="email"
-            placeholder="Enter Your Email"
-          />
-          <button className="subscribe_container_form_button">
-            Shop Now
-            <FaArrowRight  className="subscribe_container_form_button_icon"/>{" "}
-          </button>
-        </form>
-        </div>
-        
-      </section>
-      {/* subscribe */}
+      <Subscribe />
     </main>
   );
 };

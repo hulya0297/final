@@ -1,18 +1,18 @@
 import "./home.scss";
 import choose_img from "../../assets/image/img1.jpg";
-import home_logo from "../../assets/image/img2.png";
-import cardimg1 from "../../assets/image/cardImage/cardimg1.jpg";
+
 import { PiPottedPlantBold, PiVan, PiGiftBold } from "react-icons/pi";
 import { GiCactusPot, GiFlowerPot } from "react-icons/gi";
 import { HiMiniArrowPath } from "react-icons/hi2";
+import home_logo from "../../assets/image/img2.png";
 import { LuPhone } from "react-icons/lu";
-import { FaArrowRight } from "react-icons/fa6";
-import {
-  MdFavoriteBorder,
-  MdOutlineShoppingCart,
-  MdOutlineRemoveRedEye,
-} from "react-icons/md";
-import { TiArrowRepeat } from "react-icons/ti";
+import Subscribe from "../../shared/subscribe/Subscribe";
+import Card from "../../components/Card/Card";
+import { Link } from "react-router-dom";
+import shopNow1 from "../../assets/image/homeimg/shop1.jpg"
+import shopNow2 from "../../assets/image/homeimg/shop2.jpg"
+import Countdown from "../../components/CountDown/Countdown";
+
 function Home() {
   return (
     <main className="main_container">
@@ -77,43 +77,16 @@ function Home() {
       </section>
 
       {/* Featured Product card */}
-      <section className="featuredProduct">
-        <h2 className="featuredProduct_title">Featured Product</h2>
-        <img src={home_logo} alt="product_logo" />
-        <p className="featuredProduct_text">
-          Lorem ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-        <div className="featuredProduct_cards">
-          <div className="featuredProduct_cards_imgs">
-            <img
-              className="featuredProduct_cards_imgs_img"
-              src={cardimg1}
-              alt="cardimg1"
-            />
-          </div>
-          <div className="featuredProduct_cards_content">
-            <div className="featuredProduct_cards_content_overlay">
-              <ul className="featuredProduct_cards_content_overlay_overlayMenu">
-                <li className="featuredProduct_cards_content_overlay_overlayMenu_item1">
-                  <MdFavoriteBorder className="featuredProduct_cards_content_overlay_overlayMenu_icon" />
-                </li>
-                <li className="featuredProduct_cards_content_overlay_overlayMenu_item2">
-                  <MdOutlineShoppingCart className="featuredProduct_cards_content_overlay_overlayMenu_icon" />
-                </li>
-                <li className="featuredProduct_cards_content_overlay_overlayMenu_item2">
-                  <MdOutlineRemoveRedEye className="featuredProduct_cards_content_overlay_overlayMenu_icon" />
-                </li>
-                <li className="featuredProduct_cards_content_overlay_overlayMenu_item3">
-                  <TiArrowRepeat className="featuredProduct_cards_content_overlay_overlayMenu_icon" />
-                </li>
-              </ul>
-            </div>
-            <p className="featuredProduct_cards_content_text">Sit voluptatem</p>
-            <p className="featuredProduct_cards_content_price"> 68.00 $</p>
-          </div>
-        </div>
+      <section className="featuredProductSec">
+      <h2 className="featuredProductSec_title">Featured Product</h2>
+      <img src={home_logo} alt="product_logo" />
+      <p className="featuredProductSec_text">
+        Lorem ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+      <Card  />
       </section>
+   
       {/* Featured Product card */}
 
       {/* section about */}
@@ -163,32 +136,37 @@ function Home() {
       </section>
 
       {/* section about */}
-      {/* subscribe */}
 
-      <section className="subscribe">
-        <div className="subscribe_container">
-        <h2 className="subscribe_container_title">Subscribe Our Newsletter</h2>
-        <img src={home_logo} alt="home_logo" />
-        <p className="subscribe_container_text">
-          Enter Your email address to join our mailing list and keep yourself
-          update
-        </p>
-        <form className="subscribe_container_form">
-          <input
-            className="subscribe_container_form_input"
-            type="email"
-            placeholder="Enter Your Email"
-          />
-          <button className="subscribe_container_form_button">
-            Shop Now
-            <FaArrowRight  className="subscribe_container_form_button_icon"/>{" "}
-          </button>
-        </form>
-        </div>
-        
+
+      {/* shopNow */}
+      <section className="shopNow">
+        <aside className="shopNow_side">
+          <Link  to='/'>
+            <img src={shopNow1} alt="shop" />
+          </Link>
+
+        </aside>
+        <aside className="shopNow_side">
+          <Link to="/">
+            <img src={shopNow2} alt="shop" />
+          </Link>
+        </aside>
       </section>
-      {/* subscribe */}
-      
+        {/* shopNow */}
+
+        {/* daily deal */}
+        <section className="dailyDeal">
+        <h2 className="dailyDeal_title">Daily Deal</h2>
+      <img src={home_logo} alt="logo" />
+      <p className="dailyDeal_text">
+      There are many variations of passages of lorem ipsum available.
+      </p>
+       <Countdown/>
+
+        </section>
+        {/* daily deal */}
+        
+      <Subscribe />
     </main>
   );
 }

@@ -63,272 +63,116 @@
         }
     }
 
-    // cards
-    .featuredProduct {
-        text-align: center;
-
-        &_title {
-            font-family: "Aleo", serif;
-            font-size: 40px;
-            font-weight: 600;
-            color: #2d2d2d;
-            margin: 50px 0px 25px 0px;
-        }
-
-        &_text {
-            color: #707070;
-            margin-top: 30px;
-        }
-
-        &_cards {
-            width: 252px;
-            height: 380px;
-            border: 1px solid #d1d1d1;
-
-            &_imgs {
-                width: 250px;
-                height: 250px;
-
-                &_img {
-                    width: 250px;
-                    height: 250px;
-                }
-
-
-            }
-
-
-            &_content {
-                &_price {
-                    font-size: 20px;
-                    font-weight: bold;
-
-
-                }
-
-                &_text {
-                    color: #707070;
-                    margin-bottom: 20px;
-
-                    &:hover {
-                        color: #5ba515ff;
-                        font-family: "Aleo", serif;
-
-                    }
-
-
-                }
-
-                &_overlay {
-                    visibility: hidden;
-
-
-                    &_overlayMenu {
-                        display: flex;
-                        justify-content: center;
-                        gap: 10px;
-
-                        &_icon {
-                            font-size: 16px;
-
-                        }
-
-
-
-
-                        &_item1 {
-
-                            border: 1px solid white;
-                            width: 30px;
-                            height: 25px;
-                            border-radius: 10px 0px 0px 10px;
-                            background-color: white;
-
-                            &:hover {
-                                background-color: #5ba515ff;
-                                color: white;
-                            }
-                        }
-
-                        &_item2 {
-                            border: 1px solid white;
-                            width: 30px;
-                            height: 25px;
-                            background-color: white;
-
-                            &:hover {
-                                background-color: #5ba515ff;
-                                color: white;
-                            }
-                        }
-
-                        &_item3 {
-
-                            border: 1px solid white;
-                            width: 30px;
-                            height: 25px;
-                            border-radius: 0px 10px 10px 0px;
-                            background-color: white;
-
-                            &:hover {
-                                background-color: #5ba515ff;
-                                color: white;
-                            }
-                        }
-                    }
-                }
-            }
-
-        }
-
-    }
-
-    // cards
-
-// about
-.about {
-    display: flex;
-    justify-content: center;
-
-
-    &_list {
-        display: flex;
-        gap: 30px;
-
-
-
-
-        &_item {
-            margin-top: 70px;
-            border: 1px solid #bcbaba;
-            ;
-            width: 270px;
-            height: 100px;
-            display: flex;
-            align-items: center;
-            border-radius: 50px;
-
-
-            &_icons {
-                width: 50px;
-                height: 40px;
-                color: #5ba515ff;
-                margin-left: 10px;
-            }
-
-
-
-            &_content {
-
-
-
-                &_title {
-                    color: #2d2d2d;
-
-                }
-
-                &_text {
-                    color: #707070;
-                    font-size: 14px;
-                    text-align: center;
-
-                }
-            }
-        }
-    }
-
-}
-
-// about
-
-// subscribe
-
-.subscribe {
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-
-
-
-    &_container {
-        width: 1000px;
-        height: 400px;
-        background-color: #F4F4F4FF;
+    //Featured Product card 
+    .featuredProductSec {
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        
 
 
         &_title {
+            color: #2d2d2d;
+            letter-spacing: 1px;
             font-family: "Aleo", serif;
             font-size: 40px;
-            font-weight: 600;
-            color: #2d2d2d;
-            margin: 50px 0px 25px 0px;
         }
 
         &_text {
             color: #707070;
-            margin-top: 30px;
+            font-size: 17px;
+            letter-spacing: 1px;
+            font-family: "Aleo", serif;
         }
+    }
 
-        &_form {
+    //Featured Product card 
+
+    // about
+    .about {
+        display: flex;
+        justify-content: center;
+
+
+        &_list {
             display: flex;
-            justify-content: center;
-            justify-content: baseline;
-
-
-
-            &_input {
-                border: none;
-                border-radius: 50px 0px 0px 50px;
-                width: 350px;
-                height: 50px;
-                margin-top: 30px;
-                padding-left: 20px;
-                outline: none;
+            gap: 30px;
 
 
 
 
-            }
-
-            &_button {
-                border-radius: 50px;
-                width: 200px;
-                height: 50px;
-                border: none;
-                background-color: #5ba515ff;
-                color: white;
-                text-align: center;
-                font-size: 16px;
+            &_item {
+                margin-top: 70px;
+                border: 1px solid #bcbaba;
+                ;
+                width: 270px;
+                height: 100px;
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                gap: 10px;
-                margin-top: 30px;
-                cursor: pointer;
+                border-radius: 50px;
 
-                &:hover {
-                    background-color: rgb(183, 213, 154);
+
+                &_icons {
+                    width: 50px;
+                    height: 40px;
+                    color: #5ba515ff;
+                    margin-left: 10px;
                 }
 
-                &_icon {
-                    font-size: 16px;
-                    margin-top: 5px;
 
 
+                &_content {
+
+
+
+                    &_title {
+                        color: #2d2d2d;
+
+                    }
+
+                    &_text {
+                        color: #707070;
+                        font-size: 14px;
+                        text-align: center;
+
+                    }
                 }
             }
         }
 
     }
 
+    // about
+
+    //shopNow
+    .shopNow{
+        display: flex;
+        gap: 30px;
+    }
+    //shopNow
+    //dailyDeal
+    .dailyDeal {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
 
 
+        &_title {
+            color: #2d2d2d;
+            letter-spacing: 1px;
+            font-family: "Aleo", serif;
+            font-size: 40px;
+        }
+
+        &_text {
+            color: #707070;
+            font-size: 17px;
+            letter-spacing: 1px;
+            font-family: "Aleo", serif;
+        }
+    }
+    //dailyDeal
 }
-
-// subscribe
-}
-
