@@ -18,15 +18,13 @@ function Home() {
     <main className="main_container">
       <section className="choose">
         <aside className="choose_aside">
-          <img src={choose_img} alt="" />{" "}
+          <img className="choose_aside_img" src={choose_img} alt="" />{" "}
         </aside>
-
         <article className="choose_content">
           <h2 className="choose_content_title">
             Why choose us?
             <p className="choose_content_underline"></p>
           </h2>
-
           <p className="choose_content_text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
             fugit aliquid accusamus eaque nihil quae, recusandae, esse quam
@@ -79,7 +77,11 @@ function Home() {
       {/* Featured Product card */}
       <section className="featuredProductSec">
         <h2 className="featuredProductSec_title">Featured Product</h2>
-        <img src={home_logo} alt="product_logo" />
+        <img
+          className="featuredProductSec_logo"
+          src={home_logo}
+          alt="product_logo"
+        />
         <p className="featuredProductSec_text">
           Lorem ipsum is simply dummy text of the printing and typesetting
           industry.
@@ -141,12 +143,12 @@ function Home() {
       <section className="shopNow">
         <aside className="shopNow_side">
           <Link to="/store">
-            <img src={shopNow1} alt="shop" />
+            <img className="shopNow_side_img" src={shopNow1} alt="shop" />
           </Link>
         </aside>
         <aside className="shopNow_side">
           <Link to="/store">
-            <img src={shopNow2} alt="shop" />
+            <img className="shopNow_side_img" src={shopNow2} alt="shop" />
           </Link>
         </aside>
       </section>
@@ -155,7 +157,7 @@ function Home() {
       {/* daily deal */}
       <section className="dailyDeal">
         <h2 className="dailyDeal_title">Daily Deal</h2>
-        <img src={home_logo} alt="logo" />
+        <img className="dailyDeal_logo" src={home_logo} alt="logo" />
         <p className="dailyDeal_text">
           There are many variations of passages of lorem ipsum available.
         </p>

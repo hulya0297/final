@@ -1,14 +1,37 @@
+@import "../../style/mixins.scss";
+
 .main_container {
   margin: 50px;
 
+  @include mobile {
+    margin: 20px;
+  }
+
   .choose {
     display: flex;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    &_aside {
+      &_img {
+        @include mobile {
+          width: 100%;
+        }
+      }
+    }
 
     &_content {
       margin-left: 30px;
       display: flex;
       flex-direction: column;
       gap: 70px;
+
+      @include mobile {
+        margin-left: 0px;
+        gap: 50px;
+      }
 
       &_title {
         font-family: "Aleo", serif;
@@ -44,6 +67,12 @@
           &_icon {
             font-size: 70px;
             color: #5ba515ff;
+
+            @include mobile {
+              width: 50%;
+              font-size: 0px;
+              height: 40%;
+            }
           }
 
           &_text {
@@ -63,11 +92,25 @@
     flex-direction: column;
     align-items: center;
 
+    @include mobile {
+      gap: 10px 0px;
+    }
+
+    &_logo {
+      @include mobile {
+        width: 80%;
+      }
+    }
+
     &_title {
       color: #2d2d2d;
       letter-spacing: 1px;
       font-family: "Aleo", serif;
       font-size: 40px;
+
+      @include mobile {
+        font-size: 25px;
+      }
     }
 
     &_text {
@@ -75,6 +118,11 @@
       font-size: 17px;
       letter-spacing: 1px;
       font-family: "Aleo", serif;
+
+      @include mobile {
+        font-size: 14px;
+        text-align: center;
+      }
     }
   }
 
@@ -85,9 +133,18 @@
     display: flex;
     justify-content: center;
 
+    @include mobile {
+      align-items: center;
+    }
+
     &_list {
       display: flex;
       gap: 30px;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 0px;
+      }
 
       &_item {
         margin-top: 70px;
@@ -98,22 +155,42 @@
         align-items: center;
         border-radius: 50px;
 
+        @include mobile {
+          width: 350px;
+          height: 50px;
+          margin-top: 10px;
+        }
+
         &_icons {
           width: 50px;
           height: 40px;
           color: #5ba515ff;
           margin-left: 10px;
+
+          @include mobile {
+            width: 60px;
+            height: 40px;
+          }
         }
 
         &_content {
           &_title {
             color: #2d2d2d;
+
+            @include mobile {
+              font-size: 16px;
+            }
           }
 
           &_text {
             color: #707070;
             font-size: 14px;
             text-align: center;
+
+            @include mobile {
+              font-size: 12px;
+              text-align: start;
+            }
           }
         }
       }
@@ -126,7 +203,21 @@
   .shopNow {
     display: flex;
     gap: 30px;
+
+    &_side {
+      &_img {
+        @include mobile {
+          width: 100%;
+        }
+      }
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 0px;
+    }
   }
+
   //shopNow
   //dailyDeal
   .dailyDeal {
@@ -135,11 +226,27 @@
     flex-direction: column;
     align-items: center;
 
+    @include mobile {
+      width: 100%;
+      gap: 5px 0px;
+      margin: 50px 0px 0px 0px;
+    }
+
+    &_logo {
+      @include mobile {
+        width: 80%;
+      }
+    }
+
     &_title {
       color: #2d2d2d;
       letter-spacing: 1px;
       font-family: "Aleo", serif;
       font-size: 40px;
+
+      @include mobile {
+        font-size: 30px;
+      }
     }
 
     &_text {
@@ -147,7 +254,11 @@
       font-size: 17px;
       letter-spacing: 1px;
       font-family: "Aleo", serif;
+
+      @include mobile {
+        font-size: 14px;
+        text-align: center;
+      }
     }
   }
-  //dailyDeal
 }

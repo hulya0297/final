@@ -1,6 +1,12 @@
+@import "../../style/mixins.scss";
+
 .cardflex {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
     gap: 50px;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }

@@ -10,7 +10,11 @@ function Subscribe() {
           <h2 className="subscribe_container_title">
             Subscribe Our Newsletter
           </h2>
-          <img src={home_logo} alt="home_logo" />
+          <img
+            className="subscribe_container_logo"
+            src={home_logo}
+            alt="home_logo"
+          />
           <p className="subscribe_container_text">
             Enter Your email address to join our mailing list and keep yourself
             update
