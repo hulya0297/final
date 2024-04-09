@@ -112,15 +112,14 @@ const Contact = () => {
             type="tel"
             placeholder="Telephone number *"
           />
-        
         </div>
         <textarea
-            className="contact_touch_textarea"
-            name="message"
-            cols="150"
-            rows="10"
-            placeholder="Message..."
-          ></textarea>
+          className="contact_touch_textarea"
+          name="message"
+          cols="150"
+          rows="10"
+          placeholder="Message..."
+        ></textarea>
         <button className="contact_touch_btn">Send Message</button>
       </section>
 

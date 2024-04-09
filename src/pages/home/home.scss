@@ -1,178 +1,153 @@
 .main_container {
-    margin: 50px;
+  margin: 50px;
 
+  .choose {
+    display: flex;
 
-    .choose {
+    &_content {
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+
+      &_title {
+        font-family: "Aleo", serif;
+        font-size: 40px;
+        font-weight: 600;
+
+        .underline {
+          margin-top: 10px;
+          border-bottom: 3px solid #5ba515ff;
+          width: 100px;
+        }
+      }
+
+      &_text {
+        color: #707070;
+
+        &_more {
+          color: #5ba515ff;
+          cursor: pointer;
+        }
+      }
+
+      &_list {
         display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        &_item {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          &_icon {
+            font-size: 70px;
+            color: #5ba515ff;
+          }
+
+          &_text {
+            &_title {
+              color: #2d2d2d;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //Featured Product card
+  .featuredProductSec {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_title {
+      color: #2d2d2d;
+      letter-spacing: 1px;
+      font-family: "Aleo", serif;
+      font-size: 40px;
+    }
+
+    &_text {
+      color: #707070;
+      font-size: 17px;
+      letter-spacing: 1px;
+      font-family: "Aleo", serif;
+    }
+  }
+
+  //Featured Product card
+
+  // about
+  .about {
+    display: flex;
+    justify-content: center;
+
+    &_list {
+      display: flex;
+      gap: 30px;
+
+      &_item {
+        margin-top: 70px;
+        border: 1px solid #bcbaba;
+        width: 270px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+
+        &_icons {
+          width: 50px;
+          height: 40px;
+          color: #5ba515ff;
+          margin-left: 10px;
+        }
 
         &_content {
-            margin-left: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 70px;
-
-            &_title {
-                font-family: "Aleo", serif;
-                font-size: 40px;
-                font-weight: 600;
-
-                .underline {
-                    margin-top: 10px;
-                    border-bottom: 3px solid #5ba515ff;
-                    width: 100px;
-                }
-
-            }
-
-            &_text {
-                color: #707070;
-
-                &_more {
-                    color: #5ba515ff;
-                    cursor: pointer;
-
-                }
-            }
-
-            &_list {
-                display: flex;
-                flex-direction: column;
-                gap: 50px;
-
-                &_item {
-                    display: flex;
-                    align-items: center;
-                    gap: 20px;
-
-
-                    &_icon {
-                        font-size: 70px;
-                        color: #5ba515ff;
-
-                    }
-
-
-
-                    &_text {
-                        &_title {
-                            color: #2d2d2d;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    //Featured Product card 
-    .featuredProductSec {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-
-
-        &_title {
+          &_title {
             color: #2d2d2d;
-            letter-spacing: 1px;
-            font-family: "Aleo", serif;
-            font-size: 40px;
-        }
+          }
 
-        &_text {
+          &_text {
             color: #707070;
-            font-size: 17px;
-            letter-spacing: 1px;
-            font-family: "Aleo", serif;
+            font-size: 14px;
+            text-align: center;
+          }
         }
+      }
+    }
+  }
+
+  // about
+
+  //shopNow
+  .shopNow {
+    display: flex;
+    gap: 30px;
+  }
+  //shopNow
+  //dailyDeal
+  .dailyDeal {
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_title {
+      color: #2d2d2d;
+      letter-spacing: 1px;
+      font-family: "Aleo", serif;
+      font-size: 40px;
     }
 
-    //Featured Product card 
-
-    // about
-    .about {
-        display: flex;
-        justify-content: center;
-
-
-        &_list {
-            display: flex;
-            gap: 30px;
-
-
-
-
-            &_item {
-                margin-top: 70px;
-                border: 1px solid #bcbaba;
-                ;
-                width: 270px;
-                height: 100px;
-                display: flex;
-                align-items: center;
-                border-radius: 50px;
-
-
-                &_icons {
-                    width: 50px;
-                    height: 40px;
-                    color: #5ba515ff;
-                    margin-left: 10px;
-                }
-
-
-
-                &_content {
-
-
-
-                    &_title {
-                        color: #2d2d2d;
-
-                    }
-
-                    &_text {
-                        color: #707070;
-                        font-size: 14px;
-                        text-align: center;
-
-                    }
-                }
-            }
-        }
-
+    &_text {
+      color: #707070;
+      font-size: 17px;
+      letter-spacing: 1px;
+      font-family: "Aleo", serif;
     }
-
-    // about
-
-    //shopNow
-    .shopNow{
-        display: flex;
-        gap: 30px;
-    }
-    //shopNow
-    //dailyDeal
-    .dailyDeal {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-
-
-        &_title {
-            color: #2d2d2d;
-            letter-spacing: 1px;
-            font-family: "Aleo", serif;
-            font-size: 40px;
-        }
-
-        &_text {
-            color: #707070;
-            font-size: 17px;
-            letter-spacing: 1px;
-            font-family: "Aleo", serif;
-        }
-    }
-    //dailyDeal
+  }
+  //dailyDeal
 }

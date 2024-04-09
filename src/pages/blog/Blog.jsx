@@ -1,12 +1,9 @@
-import "./blog.scss";
-
 import { Link } from "react-router-dom";
 import leftimg from "../../assets/image/aboutImg/img1.png";
 import rightimg from "../../assets/image/aboutImg/img2.png";
 import { IoSearchSharp } from "react-icons/io5";
 import blogImg1 from "../../assets/image/blogImg/img1.jpg";
 import blogImg2 from "../../assets/image/blogImg/img2.jpg";
-
 import {
   FaFacebookF,
   FaGooglePlusG,
@@ -19,6 +16,8 @@ import avatar3 from "../../assets/image/blogImg/avatar3.png";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa6";
 import home_logo from "../../assets/image/img2.png";
+import "./blog.scss";
+
 const Blog = () => {
   return (
     <main className="blog">
@@ -55,7 +54,6 @@ const Blog = () => {
       </section>
       {/* blog */}
       {/* blog info */}
-
       <section className="blog_info">
         <article className="blog_info_leftside">
           <h5 className="blog_info_leftside_title">SEARCH</h5>
@@ -262,7 +260,6 @@ const Blog = () => {
           </p>
         </article>
       </section>
-
       {/* blog info */}
       <div className="main_underline"></div>
       {/* blog network section */}
@@ -286,7 +283,6 @@ const Blog = () => {
         </div>
       </section>
       {/* blog network section */}
-
       {/* blog Comment section */}
       <section className="blog_commentSec">
         <h4 className="blog_commentSec_title">3 COMMENTS</h4>
@@ -354,50 +350,44 @@ const Blog = () => {
         </div>
         <div className="main_underline"></div>
       </section>
-
       {/* blog Comment Section */}
-
       <section className="leaveComment">
         <h4 className="leaveComment_title">LEAVE A COMMENT</h4>
         <div className="leaveComment_container">
           <div className="leaveComment_container_input">
             <textarea
               className="leaveComment_container_input_message"
-              cols="156"
+              cols="150"
               rows="10"
-              placeholder="comment"
+              placeholder="Comment"
             ></textarea>
           </div>
-          <div className="leaveComment_container_input">
+          <form className="leaveComment_container_form">
             <input
               className="leaveComment_container_input_item"
               type="text"
               placeholder="Name..."
             />
-
             <input
               className="leaveComment_container_input_item"
               type="email"
               placeholder="Email..."
             />
-
             <input
               className="leaveComment_container_input_item"
               type="text"
               placeholder="Website..."
             />
-          </div>
+          </form>
         </div>
-
-        <div>
-          <button className="leaveComment_btn">
+        <div className="leaveComment-contain">
+          <button className="leaveComment-contain_btn">
             Post Now
-            <IoMdArrowRoundForward className="leaveComment_btn_icon" />
+            <IoMdArrowRoundForward />
           </button>
         </div>
       </section>
       {/* subscribe */}
-
       <section className="subscribe">
         <div className="subscribe_container">
           <h2 className="subscribe_container_title">

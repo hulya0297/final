@@ -1,6 +1,5 @@
 import "./home.scss";
 import choose_img from "../../assets/image/img1.jpg";
-
 import { PiPottedPlantBold, PiVan, PiGiftBold } from "react-icons/pi";
 import { GiCactusPot, GiFlowerPot } from "react-icons/gi";
 import { HiMiniArrowPath } from "react-icons/hi2";
@@ -12,6 +11,7 @@ import { Link } from "react-router-dom";
 import shopNow1 from "../../assets/image/homeimg/shop1.jpg";
 import shopNow2 from "../../assets/image/homeimg/shop2.jpg";
 import Countdown from "../../components/CountDown/Countdown";
+import Carousel from "../../components/carousel/Carousel";
 
 function Home() {
   return (
@@ -162,6 +162,7 @@ function Home() {
         <Countdown />
       </section>
       {/* daily deal */}
+      <Carousel />
       <Subscribe />
     </main>
   );

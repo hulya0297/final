@@ -1,28 +1,23 @@
+import { useState } from "react";
+import { IoMdArrowDropdown } from "react-icons/io";
+import "./accordionItem.scss";
 
-import Accordion from '../Accordion/Accordion';
+function AccordionItem({ title, content }) {
+  const [isOpen, setIsOpen] = useState(false);
 
-const AccordionItem = () => {
+  const toggleAccordion = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div >
-      
-      <Accordion
-        title="CONNECTING PEOPLE"
-        content="To succeed you must believe. When you believe, you will succeed. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! Lion!"
-      />
-      <Accordion
-        title="WE BUILD YOUR DREAM"
-        content="To succeed you must believe. When you believe, you will succeed. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! Lion!"
-      />
-      <Accordion
-        title="NOTHING TO FEAR"
-        content="To succeed you must believe. When you believe, you will succeed. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! Lion!"
-      />
-        <Accordion
-        title="MAKE THE WORLD BETTER"
-        content="To succeed you must believe. When you believe, you will succeed. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! Lion!"
-      />
+    <div className="accordion-item">
+      <div className="accordion-item-title" onClick={toggleAccordion}>
+        <h5>{title}</h5>
+        <IoMdArrowDropdown />
+      </div>
+      {isOpen && <div className="accordion-item-content">{content}</div>}
     </div>
   );
-};
+}
 
 export default AccordionItem;

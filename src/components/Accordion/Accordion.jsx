@@ -1,23 +1,15 @@
-import  { useState } from 'react';
-import './accordion.scss'; 
-import { IoMdArrowDropdown } from "react-icons/io";
+import "./accordion.scss";
+import { accordion } from "../../utils/content";
+import AccordionItem from "../AccordionItem/AccordionItem";
 
-const Accordion = ({ title, content,  }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-  };
-
+function Accordion() {
   return (
-    <div className="accordionitem">
-      <div className="accordionitem_title" onClick={toggleAccordion}>
-        <h5>{title}</h5>
-        <IoMdArrowDropdown />
-      </div>
-      {isOpen && <div className="accordionitem_content">{content}</div>}
+    <div className="accordion">
+      {accordion.map(({ title, content }) => (
+        <AccordionItem key={title} title={title} content={content} />
+      ))}
     </div>
   );
-};
+}
 
 export default Accordion;

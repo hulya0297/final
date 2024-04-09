@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "./about.scss";
 import leftimg from "../../assets/image/aboutImg/img1.png";
 import rightimg from "../../assets/image/aboutImg/img2.png";
 import aboutTeam from "../../assets/image/aboutImg/img3.jpg";
@@ -9,8 +8,10 @@ import woman from "../../assets/image/aboutImg/woman.jpg";
 import man2 from "../../assets/image/aboutImg/man2.jpg";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import Subscribe from "../../shared/subscribe/Subscribe";
-import AccordionItem from "../../components/AccordionItem/AccordionItem";
+// import AccordionItem from "../../components/AccordionItem/AccordionItem";
 import introSecimg from "../../assets/image/aboutImg/img4.png";
+import "./about.scss";
+import Accordion from "../../components/Accordion/Accordion";
 
 const About = () => {
   return (
@@ -103,7 +104,7 @@ const About = () => {
           <img src={introSecimg} alt="" />
         </aside>
         <article className="introSec_accordion">
-          <AccordionItem />
+          <Accordion />
         </article>
       </section>
       {/* introSec */}
@@ -127,7 +128,7 @@ const About = () => {
             </p>
           </div>
           <div className="grid_container_topleft">
-          <div className="grid_container_clipPathleft"></div>
+            <div className="grid_container_clipPathleft"></div>
             <div className="grid_container_step">
               <p>STEP 02</p>
             </div>
@@ -139,7 +140,7 @@ const About = () => {
             </p>
           </div>
           <div className="grid_container_bottomright">
-          <div className="grid_container_clipPathright"></div>
+            <div className="grid_container_clipPathright"></div>
             <div className="grid_container_step">
               <p>STEP 03</p>
             </div>
@@ -151,7 +152,7 @@ const About = () => {
             </p>
           </div>
           <div className="grid_container_bottomleft">
-          <div className="grid_container_clipPathleft"></div>
+            <div className="grid_container_clipPathleft"></div>
             <div className="grid_container_step">
               <p>STEP 04</p>
             </div>

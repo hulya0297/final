@@ -3,14 +3,14 @@ import { FiPhone } from "react-icons/fi";
 import { VscMail } from "react-icons/vsc";
 import { GrFacebookOption } from "react-icons/gr";
 import { FaTwitter, FaPinterest, FaGooglePlusG } from "react-icons/fa";
-import "./footer.scss";
 import { Link } from "react-router-dom";
+import "./footer.scss";
 
 const Footer = () => {
   return (
     <footer className="container">
       <div className="contact footer_flex">
-        <h3 >Contact us</h3>
+        <h3>Contact us</h3>
         <ul className="contact_list footer_list">
           <li className="contact_list_item">
             <CiLocationOn />
