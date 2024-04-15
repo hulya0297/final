@@ -106,6 +106,7 @@ function store() {
           <div className="productsSec_products_filter">
             <h5 className="productsSec_products_title">FILTER BY PRICE</h5>
             <div className="productsSec_products_filter_price">
+              
               <button className="productsSec_products_filter_price_btn">
                 Filter
               </button>

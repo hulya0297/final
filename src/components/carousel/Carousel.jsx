@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import logo1 from "../../assets/image/homeimg/sliderlogo1.png";
 import logo2 from "../../assets/image/homeimg/sliderlogo2.png";
 import logo3 from "../../assets/image/homeimg/sliderlogo3.png";
@@ -9,13 +8,17 @@ import "./carousel.scss";
 
 const Carousel = () => {
   const images = [logo1, logo2, logo3, logo4, logo5, logo6];
-  //   const [current, setCurrent] = useState(0);
 
   return (
     <div className="carousel">
       <div className="carousel-slides">
         {images.map((image, index) => (
-          <img src={image} alt="logo" key={index} />
+          <img
+            className="carousel-slides-image"
+            src={image}
+            alt="logo"
+            key={index}
+          />
         ))}
       </div>
     </div>
