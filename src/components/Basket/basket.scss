@@ -1,0 +1,71 @@
+.basket {
+  position: fixed;
+  width: 350px;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  z-index: 1;
+  background: rgb(255, 255, 255);
+  box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: right 0.5s ease-in-out;
+  color: #000;
+  overflow-y: auto;
+
+  &.active {
+    right: 0;
+  }
+
+  &-container {
+    position: relative;
+    height: 10%;
+
+    &-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 25px;
+      font-size: 30px;
+      background: rgb(255, 255, 255);
+      color: rgba(0, 0, 0);
+      cursor: pointer;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        color: #000;
+
+        &-image {
+          width: 100px;
+          height: 100px;
+        }
+
+        &-info {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          letter-spacing: 0.1px;
+          font-size: 12px;
+
+          &-title {
+            font-size: 15px;
+            color: rgba(0, 0, 0);
+          }
+
+          &-size {
+            &-text {
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}

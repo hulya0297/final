@@ -3,9 +3,24 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/image/logo.png";
 import { CiSearch, CiHeart } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
+import Basket from "../../components/Basket/Basket";
+import { useEffect } from "react";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const body = document.querySelector("body");
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      body.style.overflow = isOpen ? "hidden" : "auto";
+    }, 270);
+  }, [isOpen, body]);
+
   return (
     <header className="header">
       {/* <div className="header_navigation">
@@ -91,8 +106,9 @@ const Header = () => {
           </li>
           <li className="icons_conatiner_list_item">
             {" "}
-            <MdOutlineShoppingCart />
+            <MdOutlineShoppingCart onClick={handleOpen} />
           </li>
+          <Basket active={isOpen} setClose={setIsOpen} />
         </ul>
       </div>
     </header>

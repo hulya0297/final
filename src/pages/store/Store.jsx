@@ -12,6 +12,7 @@ import store4 from "../../assets/image/storeImg/img4.jpg";
 import store5 from "../../assets/image/storeImg/img5.jpg";
 import { SiWindows } from "react-icons/si";
 import { MdOutlineFormatListBulleted } from "react-icons/md";
+import Slider from "../../components/Slider/Slider.jsx"
 
 function store() {
   return (
@@ -106,13 +107,12 @@ function store() {
           <div className="productsSec_products_filter">
             <h5 className="productsSec_products_title">FILTER BY PRICE</h5>
             <div className="productsSec_products_filter_price">
+              <Slider/>
               
               <button className="productsSec_products_filter_price_btn">
                 Filter
               </button>
-              <span className="productsSec_products_filter_price_cost">
-                Price: $0 - $75
-              </span>
+              
             </div>
           </div>
 

@@ -142,9 +142,7 @@
             
             &_filter{
                 &_price{
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: baseline;
+               
                     &_btn{
                         width: 100px;
                         height: 40px;
@@ -155,10 +153,7 @@
                         font-size: 16px;
                         letter-spacing: 1px;
                     }
-                    &_cost{
-                        font-size: 14px;
-                        color: #707070;
-                    }
+                    
                 }
             }
 
